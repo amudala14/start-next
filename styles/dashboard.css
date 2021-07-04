@@ -1,0 +1,102 @@
+/* Login */
+.login {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 100vh;
+}
+
+.btn-login {
+  color: #fff;
+  background-color: #dca17a;
+  border-color: #dca17a;
+  outline: none;
+}
+
+.btn-login:active,
+.btn-login:visited,
+.btn-login:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.btn-login:hover {
+  color: #fff;
+}
+
+.register-details,
+.login-details {
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-details {
+  background-image: url(/images/signup.png);
+}
+
+.login-details {
+  background-image: url(/images/login-coffee.svg);
+}
+
+.login-details--containt {
+  width: 100%;
+}
+
+.login-details--containt img {
+  width: 100%;
+}
+
+.login-details--containt h1 {
+  color: var(--color-white);
+  text-align: center;
+  font-weight: 100;
+  font-size: 45px;
+  line-height: 1.4;
+}
+
+.login-form--area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.login-form--area-logo {
+  height: 70px;
+}
+
+.login-form--area-group {
+  width: 60%;
+  /* text-align: center; */
+  margin-top: -40px;
+}
+
+.login-form--area-group h3 {
+  padding-top: 20px;
+  font-size: 23px;
+  /* color: var(--text-primary); */
+}
+
+.login-form--area-group form {
+  padding-top: 30px;
+}
+
+/* Login Media */
+@media (max-width: 768px) {
+  .login {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .login-details,
+  .register-details {
+    display: none;
+  }
+
+  .login-form--area-group {
+    width: 75%;
+    margin-top: 0px;
+  }
+}
