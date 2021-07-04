@@ -30,12 +30,12 @@ export default function Footer() {
     <div className='footer mt--20'>
       <div className='container'>
         <div>
-          <Image
+          <img
             src='/images/logo-footer.svg'
-            width={128}
-            height={70.76}
-            quality={100}
+            width='128'
+            height='70.76'
             alt='ikawa'
+            className='footer-logo mb--40'
           />
         </div>
         <div>

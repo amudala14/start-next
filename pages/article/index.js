@@ -9,7 +9,7 @@ export default function Article() {
   return (
     <Wrapper>
       <Contents>
-        <h1 className='text-center fw-300 pt--20 pb--30'>
+        <h1 className='text-center fw-300 pt--20 pb--30 min-size-mobile'>
           Rwandan Coffee in the news
         </h1>
         <div>
@@ -22,7 +22,7 @@ export default function Article() {
           <span>Admin - Thursday 24th May 2021</span>
           <span className='d-block text-center'>
             <i className='fi fi-bookmark fs--20'></i>
-            <span className='fs--10 font-weight-medium d-block'>
+            <span className='fs--10 font-weight-medium d-block hidde-sm'>
               SAVE ARTICLE
             </span>
           </span>

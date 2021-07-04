@@ -21,12 +21,11 @@ export default function Nav({ isNavTransparent }) {
     <header className={`header ${isNavTransparent ? 'opacity-9' : ''}`}>
       <div className='container'>
         <div className='logo'>
-          <Image
+          <img
             src='/images/logo-top.svg'
             alt='user-photo'
-            width={86.18}
-            height={47.64}
-            quality='100'
+            width='86.18'
+            height='47.64'
             onClick={() => router.push('/')}
             className='pointer'
           />

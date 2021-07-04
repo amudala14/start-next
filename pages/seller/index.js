@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import {useRouter} from 'next/router'
+import { useRouter } from 'next/router';
 
 import Wrapper from '../../compontents/Layouts/Wrapper';
 import { productsData } from '../../data/client';
@@ -11,14 +11,14 @@ export default function Seller() {
   return (
     <Wrapper isNavTransparent={true}>
       <Contents pt='80'>
-        <h3 className='pb--0 pt--50 text-gold fw-300 fs--40 text-center'>
+        <h3 className='pb--0 pt--50 text-gold fw-300 fs--40 text-center '>
           Contributor Profile
         </h3>
       </Contents>
 
       <Contents pt='0'>
         <div className={`row gutters-lg`}>
-          <div className='col-12 col-md-5 offset-md-1'>
+          <div className='col-12 col-md-5 offset-md-1 pb--20'>
             <img
               onClick={() => router.push('/seller')}
               src='/images/user.png'
@@ -30,7 +30,7 @@ export default function Seller() {
             <div className='product-details'>
               <div className='seller-main-details'>
                 <div className='fs--15'>
-                  <span className='d-block mb--15 fs--40 fw-300'>
+                  <span className='d-block mb--15 fs--40 fw-300 font-small'>
                     Mugabo Francis
                   </span>
                   <button className='btn btn-primary fw-300 pl--25 pr--25 brr-0 fs--20'>

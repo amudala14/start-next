@@ -5,9 +5,9 @@ export default function Contents({ children, pt }) {
     <section className={`pt--${pt ? pt : ''}`}>
       <div className='container'>
         <div className='row'>
-          <div className='co-12 col-md-1'></div>
-          <div className='co-12 col-md-10'>{children}</div>
-          <div className='co-12 col-md-1'></div>
+          <div className='col-12 col-md-1'></div>
+          <div className='col-12 col-md-10'>{children}</div>
+          <div className='col-12 col-md-1'></div>
         </div>
       </div>
     </section>

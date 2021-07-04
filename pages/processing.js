@@ -48,10 +48,10 @@ export default function Processing() {
             {detail.imgPath1 != '' && detail.imgPath2 != '' ? (
               <>
                 <div className='col-12 col-md-6 pb--10'>
-                  <img src={detail.imgPath1} alt='' className='brr-5' />
+                  <img src={detail.imgPath1} alt='' className='brr-5 w-100p' />
                 </div>
                 <div className='col-12 col-md-6'>
-                  <img src={detail.imgPath2} alt='' className='brr-5' />
+                  <img src={detail.imgPath2} alt='' className='brr-5 w-100p' />
                 </div>
               </>
             ) : (

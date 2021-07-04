@@ -32,7 +32,12 @@ export default function Checkout() {
                   <h3 className='fs--22 text-dark pb--30'>Order summary</h3>
                 </div>
                 <div className='col-12 col-md-2'>
-                  <img src='/images/huge-product-pic.jpg' height='200' alt='' />
+                  <img
+                    src='/images/huge-product-pic.jpg'
+                    height='200'
+                    className='pb--10'
+                    alt=''
+                  />
                 </div>
                 <div className='col-12 col-md-9'>
                   <p>

@@ -11,7 +11,7 @@ export default function News() {
   return (
     <Wrapper isNavTransparent={true}>
       <Contents>
-        <div className='pt--50'>
+        <div className='pt--50 mobile '>
           {homePage.news.map((post, i) => (
             <div key={i} className='pb--30 post-item'>
               <div className='post-image'>

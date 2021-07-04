@@ -51,14 +51,14 @@ export default function CoffeShop() {
       </Contents>
       <Contents pt='0'>
         <div className='row mt---20'>
-          <div className='col-12 col-md-5'>
+          <div className='col-12 col-md-5 hidde-sm'>
             <img src='/images/coffeee.jpg' className='w-100p' alt='' />
           </div>
 
           <div className='col-12 col-md-7'>
             <div className='row gutters-lg'>
               <div className='col-12 col-md-6'>
-                <div className='row'>
+                <div className='pb--20 row'>
                   <div className='col-12 col-md-12'>
                     <h3 className='fs--22 font-weight-bold text-dark mb--30'>
                       Espresso Based
@@ -86,7 +86,7 @@ export default function CoffeShop() {
                 </div>
               </div>
               <div className='col-12 col-md-12 pb--40'>
-                <button className='btn btn-outline-dark w-100p mt--30'>
+                <button className='btn btn-outline-dark button-contact w-100p mt--30'>
                   Contact us to book a table: 0788001122/ 0788112233
                 </button>
               </div>
@@ -103,7 +103,7 @@ export default function CoffeShop() {
       </Contents>
 
       <Contents pt='20'>
-        <h3 className='text-gold mb--60'>Coffeshops near Iwacu</h3>
+        <h3 className='text-gold mb--60 fs--25'>Coffeshops near Iwacu</h3>
         <div className='shops-container'>
           {shops.slice(0, 2).map((shop, i) => (
             <div key={i} className='shop'>

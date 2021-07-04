@@ -11,11 +11,11 @@ export default function Event() {
   return (
     <Wrapper>
       <Contents pt='100'>
-        <h3 className='pb--0 pt--30 text-gold fw-300 fs--45 text-center'>
+        <h3 className='pb--0 pt--30 text-gold fw-300 fs--45 text-center min-size-mobile'>
           Find all coffee related events in Rwanda
         </h3>
 
-        <div className='row mt--40 gutters-lg'>
+        <div className='row mt--40 gutters-lg no-mt-mobile'>
           <div className='col-12 col-md-12 pb--30'>
             <img src='images/coffee-ev.jpg' className='w-100p' alt='' />
           </div>
@@ -34,7 +34,7 @@ export default function Event() {
             </p>
           </div>
 
-          <div className='col-12 col-md-5 pt--30'>
+          <div className='col-12 col-md-5 pt--30  pb--30'>
             <img src='/images/old-ev1.jpg' className='w-100p mb--20' alt='' />
             <img src='/images/old-ev2.jpg' className='w-100p' alt='' />
           </div>
@@ -75,8 +75,8 @@ export default function Event() {
       <section className='bg-light pt--80 pb--0'>
         <Contents pt='0'>
           <div className='row gutters-lg'>
-            <div className='col-12 col-md-6'>
-              <h5 className='pb--30 font-weight-bold fs--30'>
+            <div className='col-12 col-md-6 pb--20'>
+              <h5 className='pb--30 font-weight-bold fs--30 mid-size'>
                 EXPERIENCING RWANDA’S PRODUCTION FIRST HAND
               </h5>
               <p>
@@ -101,7 +101,7 @@ export default function Event() {
         <div className='row'>
           {picures.map((pic, i) => (
             <div key={i} className='col-12 col-md-6 mb--10'>
-              <img src={`/images/e${pic}.jpg`} alt='' />
+              <img src={`/images/e${pic}.jpg`} className='w-100p' alt='' />
             </div>
           ))}
         </div>

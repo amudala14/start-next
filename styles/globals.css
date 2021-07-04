@@ -916,3 +916,138 @@ section {
 .h-35 {
   height: 35px !important;
 }
+
+.hidde-sm {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  h1.fs--30.fw--800 {
+    font-weight: 700;
+    font-size: 20px !important;
+  }
+
+  .min-size-mobile {
+    font-size: 30px;
+    padding-bottom: 20px !important;
+    padding-top: 0 !important;
+  }
+  .post-author-details span {
+    font-size: 14px;
+  }
+
+  h1.pt--40.fs--30 {
+    padding-top: 20px !important;
+  }
+
+  .shops-container {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .shop {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .shop .shop-image-holder {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .shop p.pb--20 {
+    padding-bottom: 0px !important;
+  }
+
+  .hidde-sm {
+    display: none !important;
+  }
+
+  .button-contact {
+    height: auto;
+  }
+
+  .font-medium {
+    font-size: 28px !important;
+    font-weight: 300 !important;
+  }
+
+  .secondary-header-text.font-medium {
+    right: 4%;
+    text-shadow: -2px 8px 6px rgb(0 0 0 / 50%);
+  }
+
+  .secondary-header-text {
+    position: absolute;
+    top: 35%;
+    right: 3%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 35px;
+    text-shadow: -2px 8px 6px rgb(0 0 0 / 50%);
+  }
+
+  .artistic-title {
+    min-height: 100px;
+  }
+
+  .artistic-title h3 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .no-mt-mobile {
+    margin-top: 0px !important;
+  }
+
+  .huge-size {
+    font-size: 30px !important;
+  }
+
+  .take-action h1 {
+    text-align: center;
+  }
+
+  .fs--30.mid-size {
+    font-size: 25px !important;
+  }
+
+  .post-item {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  .pt--50.mobile {
+    padding-top: 20px !important;
+  }
+  .post-image {
+    width: 100%;
+  }
+
+  .product-gallery {
+    text-align: left;
+    padding: 30px 0;
+  }
+
+  .product-gallery img {
+    text-align: left;
+    padding: 30px 0;
+    height: 200px;
+  }
+
+  .fs--40.font-small {
+    font-size: 25px !important;
+  }
+
+  .p-holder {
+    padding: 20px;
+  }
+
+  .single-product-details {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .p-made-logo img {
+    height: 90px;
+  }
+}
