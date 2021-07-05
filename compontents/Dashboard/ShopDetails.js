@@ -18,7 +18,7 @@ export default function ShopDetails() {
           />
         </div>
       </div>
-      <div className='row pt--30 pb--30 pr--40 pl--40'>
+      <div className='row pt--30 pb--30 pr--30 pl--30'>
         <Input
           type='text'
           label='Coffeeshop name'

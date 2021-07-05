@@ -5,7 +5,12 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <link rel='icon' href='/favicon.ico' />
+          <title>iKawa</title>
+          <meta name='description' content='iKawa - web app'></meta>
+          <meta
+            name='viewport'
+            content='width=device-width, maximum-scale=5, initial-scale=1, user-scalable=0'></meta>
+          <link rel='icon' href='/images/logo-top.svg' />
           <link
             rel='stylesheet'
             href='https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css'
@@ -14,6 +19,7 @@ export default class MyDocument extends Document {
             href='<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 '
           />
+          <meta name='theme-color' content='#000'></meta>
         </Head>
         <body>
           <Main />

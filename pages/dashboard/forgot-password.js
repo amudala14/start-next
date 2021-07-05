@@ -14,9 +14,11 @@ export default function componentName() {
         <div className='login-details'></div>
         <div className='login-form--area'>
           <div className='login-form--area-group'>
-            <h1 className='fs--45 font-weight-bold text-center'>Login</h1>
+            <h1 className='fs--40 font-weight-bold text-center'>
+              Forgot Password
+            </h1>
             <p className='pt--15 text-center'>
-              Enjoy all the different features available for you
+              Enter your account email to <br /> recover your account.
             </p>
             <form className='pt--20 pb--20'>
               <div className='form-group position-relative'>
@@ -29,31 +31,10 @@ export default function componentName() {
                   autoComplete='off'
                 />
               </div>
-              <div className='form-group position-relative'>
-                <label htmlFor='password'>Password</label>
-                <input
-                  type='password'
-                  name='password'
-                  placeholder='Min. 8 characters'
-                  className='form-control'
-                  autoComplete='off'
-                />
-              </div>
-              <div className='form-group d-parallel pt--10'>
-                <label className='form-checkbox form-checkbox-primary mb--0'>
-                  <input type='checkbox' name='checkbox' checked />
-                  <i></i> <span className='fs--15'>Remember me</span>
-                </label>
-                <Link
-                  className='mt-30 d-block'
-                  href='/dashboard/forgot-password'
-                  passHref={true}>
-                  <span className='fs--15 pointer'>Forgot password?</span>
-                </Link>
-              </div>
+
               <div className='form-group position-relative pt--20'>
-                <Link href='/dashboard/admin' passHref>
-                  <button className='btn btn-primary w-100p'>Login</button>
+                <Link href='/dashboard' passHref>
+                  <button className='btn btn-primary w-100p'>Recover</button>
                 </Link>
               </div>
             </form>

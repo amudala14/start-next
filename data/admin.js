@@ -152,17 +152,17 @@ export const adminPageContent = [
       {
         name: 'Cafe Iwacu',
         location: 'Kigali',
-        url: '//dashboard/coffee-shop',
+        url: '/dashboard/coffee-shop',
       },
       {
         name: 'Cafe Umuco',
         location: 'Kigali',
-        url: '//dashboard/coffee-shop',
+        url: '/dashboard/coffee-shop',
       },
       {
         name: 'Cafe Umuco',
         location: 'Kigali',
-        url: '//dashboard/coffee-shop',
+        url: '/dashboard/coffee-shop',
       },
     ],
     moreDetailsLink: '/institutions',
@@ -190,21 +190,21 @@ export const hugeCardDetails = [
         email: 'mugabofrancis@gmail.com',
         'feedback/questions':
           'How can I create an acount on this platforma and be able to get updates ',
-        url: '/',
+        url: '/dashboard/client',
       },
       {
         user: 'Mugabo Francis',
         email: 'mugabofrancis@gmail.com',
         'feedback/questions':
           'How can I create an acount on this platforma and be able to get updates ',
-        url: '/',
+        url: '/dashboard/client',
       },
       {
         user: 'Mugabo Francis',
         email: 'mugabofrancis@gmail.com',
         'feedback/questions':
           'How can I create an acount on this platforma and be able to get updates ',
-        url: '/',
+        url: '/dashboard/client',
       },
     ],
   },
