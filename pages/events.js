@@ -10,7 +10,7 @@ export default function Events() {
   return (
     <Wrapper isNavTransparent={true}>
       <Contents pt='100'>
-        <h3 className='pb--0 pt--50 text-gold fw-300 fs--45 text-center'>
+        <h3 className='pb--0 pt--50 mobile text-gold fw-300 fs--45 text-center'>
           Find all coffee related events in Rwanda
         </h3>
 
