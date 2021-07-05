@@ -11,7 +11,7 @@ export default function Wrapper(props) {
       <div className='container'>
         <div className='row'>
           <div className='col-12 col-md-1'></div>
-          <div className='col-12 col-md-10 pt--130 pb--50'>
+          <div className='col-12 col-md-10 pt--130 pb--50 pt-mobile-80'>
             <PageTitle data={adminPageTitle} />
             {props.children}
           </div>

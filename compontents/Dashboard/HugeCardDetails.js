@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function HugeCardDetails({ data }) {
   return (
-    <table className='table table-borderless table-sm mb--0'>
+    <table className='table table-borderless table-responsive table-sm mb--0'>
       <thead>
         {data.length > 0
           ? Object.keys(data[0])

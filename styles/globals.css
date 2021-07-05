@@ -263,7 +263,7 @@ a:hover {
     position: relative;
   }
   header.header {
-    height: 60px;
+    height: 80px;
   }
   .top-nav {
     display: block;
@@ -930,7 +930,7 @@ section {
   .min-size-mobile {
     font-size: 30px;
     padding-bottom: 20px !important;
-    padding-top: 0 !important;
+    padding-top: 20px !important;
   }
   .post-author-details span {
     font-size: 14px;
@@ -996,9 +996,9 @@ section {
     font-size: 18px;
   }
 
-  .no-mt-mobile {
+  /* .no-mt-mobile {
     margin-top: 0px !important;
-  }
+  } */
 
   .huge-size {
     font-size: 30px !important;
@@ -1017,7 +1017,7 @@ section {
     grid-gap: 20px;
   }
   .pt--50.mobile {
-    padding-top: 20px !important;
+    padding-top: 30px !important;
   }
   .post-image {
     width: 100%;
@@ -1049,5 +1049,47 @@ section {
 
   .p-made-logo img {
     height: 90px;
+  }
+
+  .admin-page-title {
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .page-title-detail {
+    font-size: 20px !important;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .page-title-detail h1 {
+    font-size: 25px !important;
+  }
+
+  .makeStyles-heading-2 {
+    flex-basis: 80% !important;
+  }
+
+  .MuiAccordionDetails-root {
+    padding: 8px 20px 40px 20px !important;
+  }
+
+  div.pt--130.pt-mobile-80 {
+    padding-top: 100px !important;
+  }
+
+  header.header {
+    height: 80px;
+  }
+
+  .top-nav ul {
+    padding-left: 0;
+  }
+
+  ul {
+    padding-left: 0;
   }
 }
