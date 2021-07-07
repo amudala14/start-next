@@ -505,3 +505,21 @@ export const singleShop = {
     'Espressino',
   ],
 };
+
+export const reportsData = [
+  {
+    title: 'Report on the total export of coffee in the 2020/2021 year',
+    text: 'A Coffee export license is an official permission to conduct a particular export transaction. For exporting coffee from Rwanda, you will need to obtain a coffee export license from the National Agricultural Export Development Board (NAEB). It is valid for one year and renewable on request.',
+    link: '>> CHECK THE REPORT',
+  },
+  {
+    title: 'Report on the total export of coffee in the 2020/2021 year',
+    text: 'A Coffee export license is an official permission to conduct a particular export transaction. For exporting coffee from Rwanda, you will need to obtain a coffee export license from the National Agricultural Export Development Board (NAEB). It is valid for one year and renewable on request.',
+    link: '>> CHECK THE REPORT',
+  },
+  {
+    title: 'Report on the total export of coffee in the 2020/2021 year',
+    text: 'A Coffee export license is an official permission to conduct a particular export transaction. For exporting coffee from Rwanda, you will need to obtain a coffee export license from the National Agricultural Export Development Board (NAEB). It is valid for one year and renewable on request.',
+    link: '>> CHECK THE REPORT',
+  },
+];

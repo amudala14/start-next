@@ -952,9 +952,45 @@ section {
   font-weight: 600;
 }
 
+.print-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rep {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media (max-width: 768px) {
   .not-found h1 {
     font-size: 25px;
+  }
+
+  .rep {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .print-field {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .print-field button {
+    margin-top: 10px;
+  }
+
+  .fs--50.fw-300.text-dark.pt--40.message {
+    font-size: 30px !important;
+    padding-top: 20px !important;
+    padding-bottom: 30px;
+  }
+
+  img.rdb {
+    height: 50px !important;
   }
 
   .not-found img {
@@ -967,7 +1003,9 @@ section {
     font-weight: 700;
     font-size: 20px !important;
   }
-
+  .pt-mobile-80 {
+    padding-top: 80px;
+  }
   .min-size-mobile {
     font-size: 30px;
     padding-bottom: 20px !important;
@@ -1198,12 +1236,6 @@ a:hover {
   color: #505254 !important;
 }
 
-.print-field {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .btn-print {
   border: 0.5px solid #000;
   background-color: #fff;
@@ -1230,4 +1262,9 @@ a:hover {
   .pt--130 {
     padding-top: 0 !important;
   }
+}
+
+.rep:not(:last-child) {
+  border-bottom: 1px solid #dee2e6 !important;
+  padding-bottom: 30px;
 }

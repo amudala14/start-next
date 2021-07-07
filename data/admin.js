@@ -91,7 +91,7 @@ export const adminPageContent = [
       { name: 'Cafe Umuco', location: 'Kigali', url: '/dashboard/coffee-shop' },
       { name: 'Cafe Umuco', location: 'Kigali', url: '/dashboard/coffee-shop' },
     ],
-    moreDetailsLink: '/caffeshops',
+    moreDetailsLink: '/dashboard/reports/coffeeshops',
   },
   {
     cardSize: 'col-12 col-md-8',
@@ -113,7 +113,7 @@ export const adminPageContent = [
         url: '/article',
       },
     ],
-    moreDetailsLink: '/news',
+    moreDetailsLink: '/dashboard/reports/articles',
   },
   {
     cardSize: 'col-12 col-md-6',
@@ -133,7 +133,7 @@ export const adminPageContent = [
       { name: 'RWANDA CELEBRAT', location: 'Kigali', url: '/event/' },
       { name: 'CHINESE AMBASSA', location: 'Kigali', url: '/event/' },
     ],
-    moreDetailsLink: '/events',
+    moreDetailsLink: '/dashboard/reports/events',
   },
   {
     cardSize: 'col-12 col-md-4',
@@ -175,7 +175,7 @@ export const adminPageContent = [
       { name: 'Cafe Umuco', location: 'Kigali', url: '/coffeeshop' },
       { name: 'Cafe Umuco', location: 'Kigali', url: '/coffeeshop' },
     ],
-    moreDetailsLink: '/coffeeshops',
+    moreDetailsLink: '/dashboard/reports/coffeeshops',
   },
 ];
 
@@ -183,7 +183,7 @@ export const hugeCardDetails = [
   {
     cardSize: 'col-12 col-md-12',
     detailTitle: 'Feedbacks and questions',
-    moreDetailsLink: '/',
+    moreDetailsLink: '/dashboard/reports/feedbacks',
     contents: [
       {
         user: 'Mugabo Francis',
@@ -288,7 +288,7 @@ export const client = {
         { name: 'RWANDA CELEBRAT', location: 'Kigali', url: '/' },
         { name: 'CHINESE AMBASSA', location: 'Kigali', url: '/' },
       ],
-      moreDetailsLink: '/',
+      moreDetailsLink: '/dashboard/reports/events',
     },
 
     {
@@ -311,7 +311,7 @@ export const client = {
           url: '/',
         },
       ],
-      moreDetailsLink: '/',
+      moreDetailsLink: '/dashboard/reports/articles',
     },
     {
       cardSize: 'col-12 col-md-12',

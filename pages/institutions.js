@@ -34,7 +34,7 @@ export default function Processing() {
         </div>
       </Contents>
 
-      <Contents pt="30">
+      <Contents pt='30'>
         <div className='row'>
           <div className='col-12 col-md-12 mb--50'>
             <h3 className='text-gold mb--20'>Government institutions</h3>
@@ -50,6 +50,9 @@ export default function Processing() {
                   src={gov.imgPath}
                   alt=''
                   height={gov.picHeight ? gov.picHeight : '100'}
+                  className={
+                    gov.imgPath.split('.')[0] === '/images/rdb' ? 'rdb' : ''
+                  }
                 />
               </div>
               <div>

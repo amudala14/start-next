@@ -27,7 +27,7 @@ export default function componentName() {
             </h1>
           </div>
         </div>
-        <div className='login-form--area'>
+        <div className='login-form--area pt-mobile-80'>
           <div className='login-form--area-group'>
             <h1 className='fs--45 font-weight-bold text-center'>Login</h1>
             <p className='pt--10 text-center'>

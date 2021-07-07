@@ -107,7 +107,7 @@ export default function componentName() {
         <section className='bg-light pt--50 pb--0 mt--30 pb--0 mb---20'>
           <Contents pt='0'>
             <div className='row gutters-lg'>
-              <div className='col-12 col-md-7'>
+              <div className='col-12 col-md-7 order-last'>
                 <div className='bg-white p--30'>
                   <form action='' className='w-100p'>
                     <div className='form-label-group mb-3'>
@@ -146,14 +146,16 @@ export default function componentName() {
                       </label>
                     </div>
                     <div className='text-center'>
-                      <button className='btn btn-primary brr-0 pl--25 pr--25 mt--20'>Send message</button>
+                      <button className='btn btn-primary brr-0 pl--25 pr--25 mt--20'>
+                        Send message
+                      </button>
                     </div>
                   </form>
                 </div>
               </div>
               <div className='col-12 col-md-1'></div>
-              <div className='col-12 col-md-4'>
-                <h3 className='fs--50 fw-300 text-dark pt--40'>
+              <div className='col-12 col-md-4 order-first'>
+                <h3 className='fs--50 fw-300 text-dark pt--40 message'>
                   Send us <br /> a message <br /> or feedback
                 </h3>
               </div>

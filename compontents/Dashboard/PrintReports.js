@@ -8,7 +8,8 @@ export default function PrintReports({ reportTitle }) {
         className='btn btn-print btn-sm pl--20 pr--20 pt--3 pb--3 no-print'
         onClick={() => window.print()}
         style={{ height: '40px' }}>
-        <i className='fi fi-print fs--15 mr--0'></i> Print
+        <i className='fi fi-print fs--15 mr--5'></i>
+        <span className='hidden-sm'>Print</span>
       </button>
     </div>
   );

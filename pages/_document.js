@@ -5,11 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <title>iKawa</title>
-          <meta name='description' content='iKawa - web app'></meta>
-          <meta
-            name='viewport'
-            content='width=device-width, maximum-scale=5, initial-scale=1, user-scalable=0'></meta>
+          <meta name='description' content='iKawa - web app' />
           <link rel='icon' href='/images/logo-top.svg' />
           <link
             rel='stylesheet'
