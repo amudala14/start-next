@@ -215,6 +215,7 @@ export const institutionData = {
           web: 'www.minagri.gov.rw',
         },
         imgPath: '/images/minagri.jpg',
+        picHeight: '120',
       },
       {
         text: 'Rwanda Development Board (RDB) is a government institution whose mandate is to accelerate Rwanda’s economic development by enabling private sector growth. RDB was established in 2008 out of a merger of 8 Government institutions to create a One Stop Shop for business and investments.',
@@ -224,6 +225,7 @@ export const institutionData = {
           web: 'www.rdb.rw',
         },
         imgPath: '/images/rdb.jpg',
+        picHeight: '110',
       },
       {
         text: 'National Agricultural Export Development Board provides trusted market intelligence, practical advice and business tools to help Rwanda companies expand in global markets.',

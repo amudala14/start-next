@@ -35,10 +35,31 @@
 
 .register-details {
   background-image: url(/images/signup.png);
+  position: relative;
+  background-size: cover;
 }
 
 .login-details {
-  background-image: url(/images/login-coffee.svg);
+  background-image: url('/images/login-coffee.jpg');
+  position: relative;
+  background-size: cover;
+}
+
+.login-details-container {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.register-details-container {
+  width: 80%;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  text-align: center;
 }
 
 .login-details--containt {

@@ -1,6 +1,7 @@
 import React from 'react';
 import Input from '../FormElements/Input';
 import FileUploader from '../FormElements/FileUploader';
+import Textarea from '../FormElements/Textarea';
 import Button from '../FormElements/Button';
 
 export default function AddNewArticle() {
@@ -48,6 +49,16 @@ export default function AddNewArticle() {
           size='col-12 col-md-6'
           accepted='image/*'
           maxFiles='1'
+        />
+
+        <Textarea
+          label='Article content'
+          name='aContent'
+          id='aContent'
+          isRequired={true}
+          placeholder='Add contents'
+          size='col-12 col-md-12'
+          bgColor='bg-white'
         />
 
         <Button

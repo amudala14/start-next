@@ -10,8 +10,8 @@ export default function Footer() {
       { name: 'Storage', url: '/' },
     ],
     reports: [
-      { name: 'Exports', url: '/' },
-      { name: 'Carrers', url: '/' },
+      { name: 'Reports', url: '/reports' },
+      { name: 'Papers', url: '/' },
     ],
     about: [
       { name: 'Contact us', url: '/' },
@@ -23,11 +23,8 @@ export default function Footer() {
     ],
   };
 
-  const footerTitles = Object.keys(footerContent);
-  const footerMenu = Object.values(footerContent);
-
   return (
-    <div className='footer mt--20'>
+    <div className='footer mt--20 no-print'>
       <div className='container'>
         <div>
           <img

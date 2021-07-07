@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import Link from 'next/link';
 
 import Wrapper from '../compontents/Layouts/Wrapper';
 import { institutionData } from '../data/client';
@@ -33,8 +34,43 @@ export default function Processing() {
         </div>
       </Contents>
 
+      <Contents pt="30">
+        <div className='row'>
+          <div className='col-12 col-md-12 mb--50'>
+            <h3 className='text-gold mb--20'>Government institutions</h3>
+            <p>
+              The government institutions you need to help you start, run and
+              maintain your coffee business in Rwanda
+            </p>
+          </div>
+          {institutionData.institutions.data.map((gov, i) => (
+            <div key={i} className='col-12 col-md-6 pb--50'>
+              <div className='gov-image-holder text-center pb--30'>
+                <img
+                  src={gov.imgPath}
+                  alt=''
+                  height={gov.picHeight ? gov.picHeight : '100'}
+                />
+              </div>
+              <div>
+                <p>{gov.text}</p>
+                <h5 className='fs--18 text-dark text-center pt--15 font-weight-medium'>
+                  Contacts
+                </h5>
+                <span className='d-block text-center'>
+                  {`${gov.contact.tel} - ${gov.contact.email} - `}
+                  <Link href='/' passHref>
+                    <span className='text-success'>{gov.contact.web}</span>
+                  </Link>
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Contents>
+
       <Contents pt='0'>
-        <div className={`row`}>
+        <div className={`row mt---20`}>
           <div className='col-12 col-md-12 mb--30'>
             <h3 className='text-gold mb--20'>
               {institutionData.guidance.mainTitle}

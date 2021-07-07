@@ -7,7 +7,7 @@ export default function PageTitle({
 }) {
   const router = useRouter();
   return (
-    <div className='admin-page-title'>
+    <div className='admin-page-title no-print'>
       <div className='page-title-detail'>
         <h1
           className='mb--0 pointer'

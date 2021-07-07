@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
+import Nav from '../../compontents/Layouts/Nav';
+
 export default function CreateAccount() {
   return (
     <>
@@ -9,8 +11,8 @@ export default function CreateAccount() {
         <title>Create Account</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <main className='login'>
+      <Nav />
+      <main className='login pt--80'>
         <div className='login-form--area'>
           <div className='login-form--area-group'>
             <h1 className='fs--40 font-weight-bold text-center mobile-top-20px'>
@@ -21,7 +23,7 @@ export default function CreateAccount() {
               <span className='font-weight-bold'>Rwandan coffee</span>
             </p>
             <form className='pt--0'>
-              <div className='form-group mb--5 position-relative  pb-mobile-1'>
+              <div className='form-group position-relative  pb-mobile-1'>
                 <label className='mb--0' htmlFor='email'>
                   Name
                 </label>
@@ -33,7 +35,7 @@ export default function CreateAccount() {
                   autoComplete='off'
                 />
               </div>
-              <div className='form-group mb--5 position-relative  pb-mobile-1'>
+              <div className='form-group position-relative  pb-mobile-1'>
                 <label className='mb--0' htmlFor='email'>
                   Email
                 </label>
@@ -45,7 +47,7 @@ export default function CreateAccount() {
                   autoComplete='off'
                 />
               </div>
-              <div className='form-group mb--5 position-relative pb-mobile-1'>
+              <div className='form-group position-relative pb-mobile-1'>
                 <label className='mb--0' htmlFor='password'>
                   Password
                 </label>
@@ -57,7 +59,7 @@ export default function CreateAccount() {
                   autoComplete='off'
                 />
               </div>
-              <div className='form-group mb--5 pb-mobile-1'>
+              <div className='form-group pb-mobile-1'>
                 <label className='mb--0' htmlFor='select_options'>
                   What is your role?
                 </label>
@@ -81,7 +83,7 @@ export default function CreateAccount() {
                   </span>
                 </label>
               </div>
-              <div className='form-group position-relative pt--0'>
+              <div className='form-group position-relative pt--10 pb--20'>
                 <button className='btn btn-primary w-100p'>
                   Create account
                 </button>
@@ -99,13 +101,22 @@ export default function CreateAccount() {
             </span>
 
             <Link href='/'>
-              <p className='terms pointer'>
+              <p className=' fs--14 text-center pt--30 pointer'>
                 Terms & condition | Privacy Policy{' '}
               </p>
             </Link>
           </div>
         </div>
-        <div className='register-details'></div>
+        <div className='register-details'>
+          <div className='register-details-container'>
+            <h1 className='fw-300 text-dark fs--30'>
+              Get started and get all the information on the{' '}
+              <span className='font-weight-bold text-primary-green'>
+                Rwandan coffee
+              </span>
+            </h1>
+          </div>
+        </div>
       </main>
     </>
   );

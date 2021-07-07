@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 
-import Nav from '../../compontents/Layouts/Nav';
 import DetailsCards from '../../compontents/Dashboard/DetailsCards';
 import AdminAddData from '../../compontents/Dashboard/AdminAddData';
 

@@ -3,7 +3,21 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
 export default function Nav({ isNavTransparent }) {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   const router = useRouter();
   const links = [
     { path: '/', name: 'Home' },
@@ -18,7 +32,8 @@ export default function Nav({ isNavTransparent }) {
   const [isMenuShown, toggleMenu] = useState(false);
 
   return (
-    <header className={`header ${isNavTransparent ? 'opacity-9' : ''}`}>
+    <header
+      className={`header no-print ${isNavTransparent ? 'opacity-9' : ''}`}>
       <div className='container'>
         <div className='logo'>
           <img
@@ -52,19 +67,41 @@ export default function Nav({ isNavTransparent }) {
               </button>
             </Link>
           </ul>
-          <div className='user-details'>
-            <div className='img-holder'>
-              <Image
-                src='/images/user.png'
-                alt='user-photo'
-                width={40}
-                height={40}
-                quality='100'
-                onClick={() => router.push('/dashboard/seller')}
-                className='pointer'
-              />
+          <div className='position-relative'>
+            <div
+              className='user-details'
+              aria-controls='simple-menu'
+              aria-haspopup='true'
+              onClick={handleClick}>
+              <div className='img-holder'>
+                <Image
+                  src='/images/user.png'
+                  alt='user-photo'
+                  width={40}
+                  height={40}
+                  quality='100'
+                  className='pointer'
+                />
+              </div>
+              <i className='fi fi-arrow-down text-white ml--15'></i>
             </div>
-            <i className='fi fi-arrow-down text-white ml--15'></i>
+            <div className='drop-user-menu'>
+              <Menu
+                id='simple-menu'
+                anchorEl={anchorEl}
+                keepMounted
+                open={Boolean(anchorEl)}
+                onClose={handleClose}>
+                <MenuItem onClick={handleClose}>
+                  <Link href='/dashboard/'>Dashboard</Link>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
+                  <Link href='/dashboard/client'>My account</Link>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>Help</MenuItem>
+                <MenuItem onClick={handleClose}>Logout</MenuItem>
+              </Menu>
+            </div>
           </div>
         </nav>
       </div>

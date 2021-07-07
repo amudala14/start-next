@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
+import Nav from '../../compontents/Layouts/Nav';
+
 export default function componentName() {
   return (
     <>
@@ -9,16 +11,29 @@ export default function componentName() {
         <title>Login</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
+      <Nav />
       <main className='login'>
-        <div className='login-details'></div>
+        <div className='login-details'>
+          <div className='login-details-container'>
+            <img
+              src='/images/logo-footer.svg'
+              height='90'
+              alt='ikawa'
+              class='footer-logo mb--40'
+            />
+            <h1 className='fw-300 text-white fs--40'>
+              Everything you need to know about{' '}
+              <span className='font-weight-bold'>Rwandan coffee</span>
+            </h1>
+          </div>
+        </div>
         <div className='login-form--area'>
           <div className='login-form--area-group'>
             <h1 className='fs--45 font-weight-bold text-center'>Login</h1>
-            <p className='pt--15 text-center'>
+            <p className='pt--10 text-center'>
               Enjoy all the different features available for you
             </p>
-            <form className='pt--20 pb--20'>
+            <form className='pt--10 pb--10'>
               <div className='form-group position-relative'>
                 <label htmlFor='email'>Email</label>
                 <input
@@ -44,10 +59,7 @@ export default function componentName() {
                   <input type='checkbox' name='checkbox' checked />
                   <i></i> <span className='fs--15'>Remember me</span>
                 </label>
-                <Link
-                  className='mt-30 d-block'
-                  href='/dashboard/forgot-password'
-                  passHref={true}>
+                <Link href='/dashboard/forgot-password' passHref={true}>
                   <span className='fs--15 pointer'>Forgot password?</span>
                 </Link>
               </div>

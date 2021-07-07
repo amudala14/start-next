@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
+import Nav from '../../compontents/Layouts/Nav';
+
 export default function componentName() {
   return (
     <>
@@ -10,8 +12,22 @@ export default function componentName() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
+      <Nav />
       <main className='login'>
-        <div className='login-details'></div>
+        <div className='login-details'>
+          <div className='login-details-container'>
+            <img
+              src='/images/logo-footer.svg'
+              height='90'
+              alt='ikawa'
+              class='footer-logo mb--40'
+            />
+            <h1 className='fw-300 text-white fs--40'>
+              Everything you need to know about{' '}
+              <span className='font-weight-bold'>Rwandan coffee</span>
+            </h1>
+          </div>
+        </div>
         <div className='login-form--area'>
           <div className='login-form--area-group'>
             <h1 className='fs--40 font-weight-bold text-center'>

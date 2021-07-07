@@ -182,7 +182,7 @@ a.form-checkbox.form-checkbox-primary.active > i {
 header.header {
   height: 80px;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 999;
   background-color: #000;
 }
@@ -445,7 +445,7 @@ a:hover {
 /* FOOTER */
 .footer {
   background-color: var(--bg-card-medium);
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .footer h5 {
@@ -455,8 +455,12 @@ a:hover {
 
 .footer .container {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: 24% 19% 19% 19% 19%;
   justify-items: center;
+}
+
+.footer ul {
+  padding-top: 10px;
 }
 
 .footer ul a {
@@ -575,6 +579,7 @@ label {
   height: 100vh;
   position: relative;
   background-image: url('/images/main-pic.jpg');
+  background-size: cover;
 }
 
 .main-header-text {
@@ -685,6 +690,7 @@ section {
 .secondary-header {
   height: 80vh;
   position: relative;
+  background-size: cover;
 }
 
 .secondary-header-text {
@@ -1151,5 +1157,77 @@ section {
   .row.pt--50.pb--30.pr--40.pl--40 {
     padding-right: 0 !important;
     padding-left: 0 !important;
+  }
+}
+
+.form-label-group > .form-control:not(:placeholder-shown) {
+  padding-top: 25px;
+  padding-bottom: 6px;
+}
+
+.only-border-bottom,
+.only-border-bottom:focus {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+
+.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+  top: 80px !important;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.d-none {
+  display: none;
+}
+
+.drop-user-menu a {
+  color: #505254;
+}
+
+a:hover {
+  color: #505254;
+  text-decoration: none;
+}
+
+.drop-user-menu a:hover {
+  color: #505254 !important;
+}
+
+.print-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-print {
+  border: 0.5px solid #000;
+  background-color: #fff;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  .print {
+    display: block;
+  }
+
+  .p--40 {
+    padding: 10px;
+  }
+
+  .col-md-10 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .pt--130 {
+    padding-top: 0 !important;
   }
 }

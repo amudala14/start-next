@@ -22,7 +22,7 @@ export default function componentName() {
           {/* History */}
           <div className='row'>
             <div className='col-12 col-md-6 pb--20 '>
-              <img src={homePage.history.imgPath} alt="" className='w-100p' />
+              <img src={homePage.history.imgPath} alt='' className='w-100p' />
             </div>
             <div className='col-12 col-md-6'>
               <h3 className='pb--30 text-gold'>History</h3>
@@ -103,6 +103,63 @@ export default function componentName() {
           </h3>
           <PostsGrip posts={homePage.news} />
         </Contents>
+
+        <section className='bg-light pt--50 pb--0 mt--30 pb--0 mb---20'>
+          <Contents pt='0'>
+            <div className='row gutters-lg'>
+              <div className='col-12 col-md-7'>
+                <div className='bg-white p--30'>
+                  <form action='' className='w-100p'>
+                    <div className='form-label-group mb-3'>
+                      <input
+                        placeholder='Full Name'
+                        id='fname'
+                        type='text'
+                        className='form-control only-border-bottom bg-white'
+                      />
+                      <label for='fname' className='fs--16'>
+                        Full Name
+                      </label>
+                    </div>
+
+                    <div className='form-label-group mb-3'>
+                      <input
+                        placeholder='Email'
+                        id='email'
+                        type='text'
+                        className='form-control only-border-bottom bg-white'
+                      />
+                      <label for='email' className='fs--16'>
+                        Email
+                      </label>
+                    </div>
+
+                    <div className='form-label-group mb-3'>
+                      <textarea
+                        name=''
+                        id=''
+                        rows='1'
+                        className='form-control only-border-bottom bg-white'
+                      />
+                      <label for='message' className='fs--16'>
+                        Your Message/Feedback
+                      </label>
+                    </div>
+                    <div className='text-center'>
+                      <button className='btn btn-primary brr-0 pl--25 pr--25 mt--20'>Send message</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div className='col-12 col-md-1'></div>
+              <div className='col-12 col-md-4'>
+                <h3 className='fs--50 fw-300 text-dark pt--40'>
+                  Send us <br /> a message <br /> or feedback
+                </h3>
+              </div>
+            </div>
+          </Contents>
+        </section>
       </Wrapper>
     </>
   );
