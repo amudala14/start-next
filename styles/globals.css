@@ -1058,11 +1058,14 @@ section {
   .secondary-header-text {
     position: absolute;
     top: 35%;
-    right: 3%;
+    right: 0;
     color: #fff;
     font-weight: 300;
-    font-size: 35px;
+    font-size: 80px;
     text-shadow: -2px 8px 6px rgb(0 0 0 / 50%);
+    width: 100%;
+    text-align: center;
+    padding: 30px;
   }
 
   .artistic-title {
@@ -1211,9 +1214,9 @@ section {
   border-radius: 0;
 }
 
-.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+/* .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
   top: 80px !important;
-}
+} */
 
 .position-relative {
   position: relative;
@@ -1267,4 +1270,66 @@ a:hover {
 .rep:not(:last-child) {
   border-bottom: 1px solid #dee2e6 !important;
   padding-bottom: 30px;
+}
+
+@media (min-width: 1536px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1536px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 2200px;
+  }
+
+  .secondary-header-text {
+    position: absolute;
+    top: 35%;
+    right: 7%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 150px;
+  }
+
+  .main-header-text {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 130px;
+  }
+
+  body {
+    font-size: 22px;
+  }
+}
+
+@medi (max-width: 500px) {
+  .secondary-header-text {
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-nav ul {
+    padding-left: 20px;
+  }
+
+  .user-details {
+    margin-top: 40px;
+    margin-left: 35px;
+  }
 }
