@@ -67,7 +67,7 @@ export default function Nav({ isNavTransparent }) {
               </button>
             </Link>
           </ul>
-          <div className='position-relative'>
+          <div className='position-relative'style={{ marginLeft: 30 }}>
             <div
               className='user-details'
               aria-controls='simple-menu'
