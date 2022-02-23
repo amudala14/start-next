@@ -96,7 +96,6 @@ export default function Nav({ isNavTransparent }) {
                   <Link href='/dashboard/'>Dashboard</Link>
                 </MenuItem>
                 <MenuItem onClick={handleClose}>
-//                   <Link href='/dashboard/client'>My account</Link>
                     My account
                 </MenuItem>
                 <MenuItem onClick={handleClose}>Help</MenuItem>
